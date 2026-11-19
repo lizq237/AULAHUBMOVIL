@@ -4,7 +4,7 @@
 
 📱 **Android: este repositorio** · 🌐 **[Ver web publicada](https://aulahub-1f738.web.app/)** · 📖 **[README principal del sistema](https://github.com/lizq237/AULAHUB-web)**
 
-> Proyecto académico en equipo de la Facultad de Informática Culiacán (UAS). El acceso a la app requiere un usuario previamente creado en Firebase Authentication y sus datos asociados en Firestore. **No existe cuenta de prueba pública confirmada.**
+> Proyecto académico en equipo de la Facultad de Informática Culiacán (UAS). El acceso a la app requiere usuarios existentes en Firebase Authentication y documentos asociados en Firestore. **La demo web ya fue comprobada de principio a fin con los roles docente y administrador; el recorrido actual de Android aún está pendiente de verificar.** Las credenciales se facilitan únicamente por un canal privado cuando corresponda.
 
 ## Funcionalidades principales
 
@@ -55,11 +55,11 @@ Para probar la app se necesita:
 - Materias/grupos de prueba cuando se quiera comprobar la reservación.
 - Reglas Firestore desplegadas que permitan únicamente las operaciones autorizadas.
 
-**No se incluyen contraseñas en el repositorio.** El README web explica cómo recuperar acceso al proyecto Firebase y por qué las reglas disponibles en GitHub requieren una revisión.
+**No se incluyen contraseñas ni correos institucionales en el repositorio.** Se conservarán las cuentas existentes de Firebase para las pruebas, sin publicarlas. Consulta el [README web](https://github.com/lizq237/AULAHUB-web) para solicitar acceso por un canal privado y revisar el estado de seguridad de Firebase.
 
 ## Recorrido sugerido para evaluadores
 
-**Con cuentas ficticias verificadas:**
+**Con cuentas existentes y acceso autorizado:**
 
 1. Accede con el usuario docente.
 2. Selecciona un laboratorio o auditorio y abre el calendario.
@@ -68,7 +68,7 @@ Para probar la app se necesita:
 5. Cambia a una cuenta de administrador que tenga asignada el aula y el turno de prueba.
 6. Acepta o rechaza la solicitud y vuelve a la cuenta docente para comprobar su actualización.
 
-Este es un **recorrido previsto por el código**, pero no está verificado con credenciales y servicios actuales de producción.
+La versión **web** ya superó manualmente estas comprobaciones de docente y administrador el **19 de noviembre de 2026**. Sin embargo, **no se ha repetido aquí la prueba completa en Android**; la funcionalidad móvil debe validarse antes de ofrecerla como demo comprobada.
 
 ## Arquitectura de la app
 
@@ -101,9 +101,12 @@ Rutas relevantes del código:
 
 ## Para reclutadores
 
-El código puede examinarse en este repositorio y la [interfaz web está publicada](https://aulahub-1f738.web.app/). Sin embargo, **no se ha facilitado una cuenta demo pública**; para evaluar el flujo completo se necesita un entorno o cuentas ficticias autorizadas.
+- **Demo web funcional:** [abrir AulaHub](https://aulahub-1f738.web.app/). Se verificaron manualmente acceso docente, consulta de horarios, creación de reserva, acceso administrativo y aprobación/rechazo.
+- **Código Android:** este repositorio permite evaluar la implementación Java/XML y su integración con Firebase. La prueba móvil completa queda pendiente de volver a verificarse.
+- **Acceso para evaluación:** las cuentas de docente y administrador ya existen, pero **no se publican contraseñas**. Para coordinar una prueba con autorización, contacta a la autora mediante [LinkedIn](https://www.linkedin.com/in/lizeth-quiroz-urias). Evita usar datos reales o modificar reservas institucionales.
+- **Seguridad:** antes de permitir pruebas externas sin supervisión deben verificarse las reglas de Firestore desplegadas, los roles y el alcance de las cuentas disponibles.
 
-Lee el [README principal del proyecto](https://github.com/lizq237/AULAHUB-web) para el alcance, recuperación de acceso a Firebase y estado de la demostración.
+Consulta el [README principal del proyecto](https://github.com/lizq237/AULAHUB-web) para el recorrido web, las comprobaciones realizadas y el estado de Firebase.
 
 ---
 
